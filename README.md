@@ -39,6 +39,8 @@ The following images show the web application's appearance: ***
 ## Credits
 Used the following sources as tutorials and guidelines: ***
 
+Ninja Net's Bootstrap 5 Crash Course Tutorials: https://www.youtube.com/playlist?list=PL4cUxeGkcC9joIM91nLzd_qaH_AimmdAR
+
 
 Also utilized the Xpert Learning assistant for some portions of my code:
 https://bootcampspot.instructure.com/courses/5293/external_tools/313

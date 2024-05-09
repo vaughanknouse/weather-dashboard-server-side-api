@@ -1,7 +1,31 @@
-.header{
+.header {
   background-image: linear-gradient(rgb(83, 18, 154), rgb(48, 6, 71));
   color: white;
   text-align: center;
   height: auto;
-  padding: 15px;
+  padding: 10px;
+}
+
+h3 {
+  margin: 0;
+}
+
+.btn {
+  width: 100%;
+  background-color: rgb(82, 156, 240);
+  color: white;
+  font-size: 18px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 1%;
+}
+
+#today-weather {
+  display: none;
+}
+
+#forecast-container {
+  display: none;
 }
