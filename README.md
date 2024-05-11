@@ -37,10 +37,10 @@ The following image shows the web application's appearance:
 
 ## Link to Deployed Application
 
-***
+https://vaughanknouse.github.io/weather-dashboard-server-side-api/
 
 ## Credits
-Used the following sources as tutorials and guidelines: ***
+Used the following sources as tutorials and guidelines:
 
 The OpenWeatherMap API: https://openweathermap.org/forecast5.
 
