@@ -95,10 +95,37 @@ const displayWeather = function (data) {
   tempEl.innerHTML = currentWeather.temp;
   humidityEl.innerHTML = currentWeather.humidity;
   windEl.innerHTML = currentWeather.wind;
-  iconEl.innerHTML = "<img src='https://openweathermap.org/img/wn/" + currentWeather.icon + "@2x.png'></img>";
+  //iconEl.innerHTML = "<img src='https://openweathermap.org/img/wn/" + currentWeather.icon + "@2x.png'></img>";
 };
 
 // getForecast function to get 5-day forecast data
+const getForecast = function (city) {
+  const apicityUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`;
+  fetch(apicityUrl).then(function (response) {
+    if (response.ok) {
+      response.json(). then(function(data) {
+        console.log(data);
+        const today = today.format("MM/DD/YYYY");
+        console.log(today);
+        for (let i = 0; i < data.list.length; i++) {
+          const dateTime = data.list[i].dx_tx.split('');
+          if (dateTime[0] !==today && dateTime[1] === "12:00:00") {
+            let futureDate = {
+              date: dayjs(dateTime[0]).format("MM/DD/YYYY"),
+              time: datetime[1],
+              icon: data.list[i].weather[0].icon,
+              temp: data.list[i].main.temp,
+              humidity: data.list[i].main.humidity,
+              wind: data.list[i].main.wind.speed,
+            };
+            forecast.push(futureDate);
+          }
+        }
+        displayForecast();
+      })
+    }
+  })
+}
 
 // displayForecast function to display 5-day forecast data
 
