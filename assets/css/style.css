@@ -26,14 +26,6 @@ h4 {
   padding: 1%;
 }
 
-#today-weather {
-  display: none;
-}
-
-#forecast-container {
-  display: none;
-}
-
 .alert {
   margin-left: 25px;
 }
