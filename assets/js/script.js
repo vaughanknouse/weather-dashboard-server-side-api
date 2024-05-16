@@ -155,7 +155,7 @@ const displayForecast = function () {
 
 
 // display collected information from OpenWeather API on the page
-const displayWeather = function (data) {
+const displayWeather = function () {
   todayWeatherEl.style.display = "block";
   forecastContEl.style.display = "block";
   cityNameEl.innerHTML = currentWeather.name;
@@ -163,11 +163,7 @@ const displayWeather = function (data) {
   tempEl.innerHTML = currentWeather.temp;
   humidityEl.innerHTML = currentWeather.humidity;
   windEl.innerHTML = currentWeather.wind;
-  const todayWeather = currentWeather.icon;
-  const todayWeatherIcon = document.createElement('img');
-  todayWeatherIcon.src = `https://openweathermap.org/img/w/${todayWeather}.png`;
-
-  //iconEl.innerHTML = "<img src='https://openweathermap.org/img/wn/" + currentWeather.icon + "@2x.png'></img>";
+  iconEl.innerHTML = "<img src='https://openweathermap.org/img/wn/" + currentWeather.icon + "@2x.png'></img>";
 }
 
 // function to display search history on the page
