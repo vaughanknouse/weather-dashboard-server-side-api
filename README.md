@@ -8,6 +8,8 @@ This weather dashboard displays up-to-date current and future weather data for a
 
 This weather dashboard application enables individuals, most notably those who are traveling to multiple cities and need to plan their trips accordingly, to easily access and view the current and future weather conditions of those cities. Through completing this challenge, I was able to improve my understanding of the workings of server-side APIs and how they are beneficial in helping developers access and retrieve data from an application developed by another individual or company in order to apply that retrieved data to a current project.
 
+For this project, I had a very difficult time getting the 5-day forecast information to display as well as the icons. Thus, after multiple attempts, the 5-day forecast and the icons were not displayed in the final deployment.
+
 
 ## User Story
 

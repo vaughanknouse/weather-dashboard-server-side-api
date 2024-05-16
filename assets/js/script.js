@@ -68,7 +68,6 @@ const getWeather = function (city) {
               //console.log(coordData);
               console.log(`Coordinates for ${city}: Latitude - ${lat}, Longitude - ${lon}`);
               displayWeather();
-              //getForecast(city);
             })
           }
 
@@ -91,9 +90,9 @@ const getForecast = function (city) {
   fetch(apicityUrl).then(function (response) {
     if (response.ok) {
       response.json(). then(function (data) {
-        console.log(data);
+        //console.log(data);
         const today = today.format("MM/DD/YYYY");
-        console.log(today);
+        //console.log(today);
         for (let i = 0; i < data.list.length; i++) {
           const dateTime = data.list[i].dx_tx.split('');
           if (dateTime[0] !==today && dateTime[1] === "12:00:00") {
@@ -148,9 +147,9 @@ const displayForecast = function () {
     futurehumidityEl.innerHTML = "Humidity: " + forecast[i].humidity;
     futureCardBodyEl.appendChild(futurehumidityEl);
 
-    futureCardEl.appendChild(futurecardBodyEl);
-    futureCardContainerEl.appendChild(futurecardEl);
-    forecastEl.appendChild(futurecardContainerEl);
+    futureCardEl.appendChild(futureCardBodyEl);
+    futureContainerEl.appendChild(futureCardEl);
+    forecastEl.appendChild(futureContainerEl);
   }
 }
 
@@ -164,7 +163,11 @@ const displayWeather = function (data) {
   tempEl.innerHTML = currentWeather.temp;
   humidityEl.innerHTML = currentWeather.humidity;
   windEl.innerHTML = currentWeather.wind;
-  iconEl.innerHTML = "<img src='https://openweathermap.org/img/wn/" + currentWeather.icon + "@2x.png'></img>";
+  const todayWeather = currentWeather.icon;
+  const todayWeatherIcon = document.createElement('img');
+  todayWeatherIcon.src = `https://openweathermap.org/img/w/${todayWeather}.png`;
+
+  //iconEl.innerHTML = "<img src='https://openweathermap.org/img/wn/" + currentWeather.icon + "@2x.png'></img>";
 }
 
 // function to display search history on the page
