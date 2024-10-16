@@ -8,19 +8,17 @@ This weather dashboard displays up-to-date current and future weather data for a
 
 This weather dashboard application enables individuals, most notably those who are traveling to multiple cities and need to plan their trips accordingly, to easily access and view the current and future weather conditions of those cities. Through completing this challenge, I was able to improve my understanding of the workings of server-side APIs and how they are beneficial in helping developers access and retrieve data from an application developed by another individual or company in order to apply that retrieved data to a current project.
 
-For this project, I had a very difficult time getting the 5-day forecast information to display as well as the icons. Thus, after multiple attempts, the 5-day forecast and the icons were not displayed in the final deployment.
-
-
 ## User Story
 
-```
+```md
 AS A traveler
 I WANT to see the weather outlook for multiple cities
 SO THAT I can plan a trip accordingly
 ```
+
 ## Acceptance Criteria
 
-```
+```md
 GIVEN a weather dashboard with form inputs
 WHEN I search for a city
 THEN I am presented with current and future conditions for that city and that city is added to the search history
@@ -33,22 +31,26 @@ THEN I am again presented with current and future conditions for that city
 ```
 
 ## Mock Up
+
 The following image shows the web application's appearance:
 
-![Shows deployed weather dashboard application with a page that includes a form input to search for a city, the list of searched cities, the current weather conditions for that city, and the 5-day forecast for that city.](assets/images/weather-dashboard-screenshot.png)
+![Shows deployed weather dashboard application with a page that includes a form input to search for a city, the list of searched cities, the current weather conditions for that city, and the 5-day forecast for that city.](assets/images/weather-dashboard-screenshot-version2.png)
 
 ## Link to Deployed Application
 
-https://vaughanknouse.github.io/weather-dashboard-server-side-api/
+<https://vaughanknouse.github.io/weather-dashboard-server-side-api/>
 
 ## Credits
+
 Used the following sources as tutorials and guidelines:
 
-The OpenWeatherMap API: https://openweathermap.org/forecast5.
+The OpenWeatherMap API: <https://openweathermap.org/forecast5>.
 
-Ninja Net's Bootstrap 5 Crash Course Tutorials: https://www.youtube.com/playlist?list=PL4cUxeGkcC9joIM91nLzd_qaH_AimmdAR
+Ninja Net's Bootstrap 5 Crash Course Tutorials: <https://www.youtube.com/playlist?list=PL4cUxeGkcC9joIM91nLzd_qaH_AimmdAR>
 
-"How to Use API Keys" article: https://coding-boot-camp.github.io/full-stack/apis/how-to-use-api-keys/ 
+"How to Use API Keys" article: <https://coding-boot-camp.github.io/full-stack/apis/how-to-use-api-keys/>
+
+ChatGPT: <https://chatgpt.com/?oai-dm=1>
 
 Also utilized the Xpert Learning assistant for some portions of my code:
-https://bootcampspot.instructure.com/courses/5293/external_tools/313
+<https://bootcampspot.instructure.com/courses/5293/external_tools/313>
