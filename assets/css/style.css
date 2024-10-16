@@ -1,3 +1,4 @@
+/* Header styling */
 .header {
   background-image: linear-gradient(rgb(83, 18, 154), rgb(48, 6, 71));
   color: white;
@@ -6,6 +7,7 @@
   padding: 10px;
 }
 
+/* Heading styles */
 h3 {
   margin: 0;
 }
@@ -14,34 +16,47 @@ h4 {
   font-size: 18px;
 }
 
+/* Button styling */
 .btn {
   width: 100%;
   background-color: rgb(82, 156, 240);
   color: white;
   font-size: 18px;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
 }
 
+.btn:hover {
+  background-color: rgb(60, 130, 210);
+}
+
+/* Form input styling */
 .form-input {
   width: 100%;
   padding: 1%;
+  box-sizing: border-box;
 }
 
+/* Alert styling */
 .alert {
   margin-left: 25px;
+  color: red;
 }
 
+/* History item styling */
 .history-item {
   width: 100%;
   text-align: center;
-  border-style: solid;
-  border-width: thin;
+  border: 1px solid lightslategray;
   justify-content: space-between;
   margin-bottom: 3px;
   border-radius: 10px;
-  border-color: lightslategray;
-  background-color:  rgb(156, 147, 147);
+  background-color: rgb(156, 147, 147);
+  padding: 5px;
 }
 
 .history-item h4 {
   padding-left: 5px;
+  margin: 0;
 }
